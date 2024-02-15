@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,511 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PoisonRat_walking_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1700
+        width: 200
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f71608443a026478c7dd6a3bafda77
+      internalID: -1542958162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_1
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1700
+        width: 200
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9153f691ec8da72449dd34f534d29be7
+      internalID: 925681692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VileRat_walking_0
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1700
+        width: 204
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cd470e4dd071548bc6286f07d2711f
+      internalID: -574774406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1460
+        width: 200
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f87a97d4778da419825bdb7c7fdf5c
+      internalID: 1247671197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_4
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1460
+        width: 200
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6f373f33f05a94c892b5724c8d9731
+      internalID: -1463532070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VileRat_walking_1
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1460
+        width: 204
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b0e6d10f05e7b46bbb74859ea2dbc0
+      internalID: -46710604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_6
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1220
+        width: 196
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b0d0701e19edc458896ee96cba65cc
+      internalID: -1225142413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1220
+        width: 196
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd5dc7f1d3869446a1ad9242f27bc3c
+      internalID: -1843093308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VileRat_walking_2
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1220
+        width: 200
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d30fd6fe818534cb186fc1279db8ca
+      internalID: -987653183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 980
+        width: 192
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3adcdf1fade2014b93b12dc0656738b
+      internalID: 974007151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_10
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 980
+        width: 192
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1c698b0e9e6c044a1f59f2f6b2d88e
+      internalID: 11891728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VileRat_walking_3
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 980
+        width: 196
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18940b3078dc4b41a401cd33b69fb8e
+      internalID: -995096724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 740
+        width: 200
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c95fb816e422d42a3c89741b58962a
+      internalID: -1852531011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_13
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 740
+        width: 200
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6daa356c7cce99a42a3e44b664eefae0
+      internalID: -1761328643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VileRat_walking_4
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 740
+        width: 204
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e03375be9c71548b39c69fbcb6768f
+      internalID: 2141812821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 500
+        width: 200
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23cf7a2198f387941b772535a9a011bf
+      internalID: 191195524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_16
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 500
+        width: 200
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c4bce38ea94f249894a0eea19481c6
+      internalID: -1291756734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VileRat_walking_5
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 500
+        width: 204
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4bce18788dee14090e4ac16ed83b5b
+      internalID: 2092383831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_18
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 260
+        width: 196
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2fdee3a35bae647bf2d9b9e4e05d32
+      internalID: 1279974064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 260
+        width: 196
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7434174fe9b9e1c459f978a9d7c6f5f1
+      internalID: 99847097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VileRat_walking_6
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 260
+        width: 200
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9439eaf6d2827248bafd1bafedb7262
+      internalID: 224191789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_21
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 20
+        width: 196
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18ec4c3a481d3f4097dda1d8a86cd12
+      internalID: 1503096947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rats_walking_original_22
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 20
+        width: 196
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209ebf59d75bd1942880f8f80f133335
+      internalID: -499857003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VileRat_walking_7
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 20
+        width: 200
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea9994a8266efc4caec4ab08d387b73
+      internalID: 181121486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +636,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PoisonRat_walking_0: -574774406
+      Rats_walking_original_1: 925681692
+      Rats_walking_original_10: 11891728
+      Rats_walking_original_12: -1852531011
+      Rats_walking_original_13: -1761328643
+      Rats_walking_original_15: 191195524
+      Rats_walking_original_16: -1291756734
+      Rats_walking_original_18: 1279974064
+      Rats_walking_original_19: 99847097
+      Rats_walking_original_21: -499857003
+      Rats_walking_original_22: 181121486
+      Rats_walking_original_3: -1463532070
+      Rats_walking_original_4: -1225142413
+      Rats_walking_original_6: -1843093308
+      Rats_walking_original_7: 974007151
+      Rats_walking_original_9: -1542958162
+      VileRat_walking_0: -46710604
+      VileRat_walking_1: -987653183
+      VileRat_walking_2: -995096724
+      VileRat_walking_3: 2141812821
+      VileRat_walking_4: 2092383831
+      VileRat_walking_5: 224191789
+      VileRat_walking_6: 224191789
+      VileRat_walking_7: 181121486
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

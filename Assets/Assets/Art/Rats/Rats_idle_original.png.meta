@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb6f95edcf3984c41a205bc3caad1939
+guid: 4c17f818c6c4fb04eb597105652b4819
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -46,8 +46,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PoisonRat_idle_0
+      name: Rats_idle_original 1_0
       rect:
         serializedVersion: 2
         x: 92
@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 447fa3b5205d5e3438e54c69adf5db1d
-      internalID: 141296899
+      spriteID: 28baa4b7f749c164ab9d5ebca49a18ef
+      internalID: 1544132373
       vertices: []
       indices: 
       edges: []
@@ -149,7 +149,7 @@ TextureImporter:
         serializedVersion: 2
         x: 336
         y: 1700
-        width: 149
+        width: 148
         height: 104
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -158,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3cba86a6443a52439ed777ff39d6bf1
-      internalID: -899759295
+      spriteID: 42f0d14fd9194df47ae15c182e70fd6d
+      internalID: -1447768184
       vertices: []
       indices: 
       edges: []
@@ -168,25 +168,25 @@ TextureImporter:
       name: VileRat_idle_0
       rect:
         serializedVersion: 2
-        x: 575
+        x: 572
         y: 1700
-        width: 153
+        width: 156
         height: 104
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1ad124f508690a4381970468c170786
-      internalID: 1901278641
+      spriteID: ba9f06b0d360ef34f8cb526fbd3c234e
+      internalID: 710143098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoisonRat_idle_1
+      name: Rats_idle_original 1_3
       rect:
         serializedVersion: 2
         x: 92
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3da745acf35d55b44a645acd6352b27b
-      internalID: 1590056810
+      spriteID: a552818c69c933648bcc0ddb272b8aff
+      internalID: -494814866
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
         serializedVersion: 2
         x: 336
         y: 1460
-        width: 149
+        width: 148
         height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c2b0b3a75d9feb4996cd590a32b71d9
-      internalID: -816054085
+      spriteID: 56dddcb7a7847d3458cf6476d9efafeb
+      internalID: -69278001
       vertices: []
       indices: 
       edges: []
@@ -231,25 +231,25 @@ TextureImporter:
       name: VileRat_idle_1
       rect:
         serializedVersion: 2
-        x: 575
+        x: 572
         y: 1460
-        width: 153
+        width: 156
         height: 100
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3901d2f841629584dab54deb5a09864e
-      internalID: -1624131321
+      spriteID: 155733ca54d9db4428d8897770210e80
+      internalID: -1436100811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoisonRat_idle_2
+      name: Rats_idle_original 1_6
       rect:
         serializedVersion: 2
         x: 92
@@ -263,8 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99439cedbf35b8741bfad9501649b06f
-      internalID: -2099637558
+      spriteID: 9b1c63ed711649f49bb4da98fac02dce
+      internalID: 560369272
       vertices: []
       indices: 
       edges: []
@@ -284,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d013a2268496a0d41bca4836b35a4da4
-      internalID: 1846725143
+      spriteID: a355acc9b7392554a93623d9a85d4061
+      internalID: 389304617
       vertices: []
       indices: 
       edges: []
@@ -294,25 +294,25 @@ TextureImporter:
       name: VileRat_idle_2
       rect:
         serializedVersion: 2
-        x: 576
+        x: 572
         y: 1220
-        width: 152
+        width: 156
         height: 100
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f34ef6315f58ac74eaa79313dcb4edd0
-      internalID: -53930899
+      spriteID: 24dcbe48ce2ed954f8ddc2bd6112fd36
+      internalID: 1360763243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoisonRat_idle_3
+      name: Rats_idle_original 1_9
       rect:
         serializedVersion: 2
         x: 92
@@ -326,8 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cabd34763bb6ef4eaceaa7a881ce04f
-      internalID: -1410777576
+      spriteID: 2e3418349f9a61540a66b580dc30aee8
+      internalID: 1600224662
       vertices: []
       indices: 
       edges: []
@@ -337,7 +337,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 336
-        y: 980
+        y: 981
         width: 148
         height: 100
       alignment: 0
@@ -347,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd326a30c9a2c5341ad9bd6841ce1734
-      internalID: -24326738
+      spriteID: fe3e4f60bf0229940a5b0e814491ba1e
+      internalID: 465715132
       vertices: []
       indices: 
       edges: []
@@ -357,25 +357,25 @@ TextureImporter:
       name: VileRat_idle_3
       rect:
         serializedVersion: 2
-        x: 576
+        x: 572
         y: 980
-        width: 152
+        width: 156
         height: 100
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e60ab62244cd4cd449d9e57d2ae5befe
-      internalID: -1245374332
+      spriteID: 4c87d245a0855a545872fc4ca5c5824a
+      internalID: -1881684771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoisonRat_idle_4
+      name: Rats_idle_original 1_12
       rect:
         serializedVersion: 2
         x: 92
@@ -389,8 +389,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b060cc9e308100f4fa33645e2592b074
-      internalID: -127337403
+      spriteID: aaab3dc3f4b9d8049bfb36fa80b02979
+      internalID: 808362872
       vertices: []
       indices: 
       edges: []
@@ -410,8 +410,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9dcb101c3bedc248be50a8a85caa58d
-      internalID: -461899634
+      spriteID: 72dd01952dda6df4bafcc6589ba5a471
+      internalID: -819005153
       vertices: []
       indices: 
       edges: []
@@ -420,25 +420,25 @@ TextureImporter:
       name: VileRat_idle_4
       rect:
         serializedVersion: 2
-        x: 576
+        x: 572
         y: 740
-        width: 152
+        width: 156
         height: 104
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b0f9d44b97c21c49961c3fc62e8f8e7
-      internalID: 2117149572
+      spriteID: c2a88ce1e6790a748b00ba02aed5dcb1
+      internalID: 1599247232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoisonRat_idle_5
+      name: Rats_idle_original 1_15
       rect:
         serializedVersion: 2
         x: 92
@@ -452,8 +452,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91024fce5325de8479bbd49f39db7f79
-      internalID: 1292391528
+      spriteID: 5c803120ee0817f44ba0bd110ae717eb
+      internalID: -833103989
       vertices: []
       indices: 
       edges: []
@@ -473,8 +473,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b32c4e6e0aa17fc44899f1b881d59ed6
-      internalID: -566084877
+      spriteID: b1e2f5e950ba62348ae41e08ef37b54f
+      internalID: 1737485196
       vertices: []
       indices: 
       edges: []
@@ -483,25 +483,25 @@ TextureImporter:
       name: VileRat_idle_5
       rect:
         serializedVersion: 2
-        x: 576
+        x: 572
         y: 500
-        width: 152
+        width: 156
         height: 104
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 452f910d0a097b043b417f77d48a68b4
-      internalID: 157919542
+      spriteID: 69140a854c0bf7d4d831232ffa18efac
+      internalID: 595919548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoisonRat_idle_6
+      name: Rats_idle_original 1_18
       rect:
         serializedVersion: 2
         x: 88
@@ -515,8 +515,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6be12071906fb664b9efcfcb3d470983
-      internalID: -1018175677
+      spriteID: 8a96ef4f606321844968a29cdcde6a8d
+      internalID: -121778697
       vertices: []
       indices: 
       edges: []
@@ -536,8 +536,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcabe2af8db02cf489c83a8539a15358
-      internalID: 196649860
+      spriteID: 99904f58f4331ea41986b0facc807b89
+      internalID: -345073221
       vertices: []
       indices: 
       edges: []
@@ -550,21 +550,21 @@ TextureImporter:
         y: 260
         width: 156
         height: 96
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07fb25fa6a83d77459b5788386413bf2
-      internalID: -1465536281
+      spriteID: 11330624a18ee894794ec7eb5d8520e8
+      internalID: 674487497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoisonRat_idle_7
+      name: Rats_idle_original 1_21
       rect:
         serializedVersion: 2
         x: 88
@@ -578,8 +578,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbf9bd255317b664282a3da4b1a016aa
-      internalID: -1795001184
+      spriteID: b76466960eb3fe5499a005c36b6da990
+      internalID: 1033104372
       vertices: []
       indices: 
       edges: []
@@ -599,8 +599,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37d9af6b8cab7b3478875e68899fd35b
-      internalID: -1617578084
+      spriteID: 99b54ad683dcfa54fac90962c42a4a78
+      internalID: -352288078
       vertices: []
       indices: 
       edges: []
@@ -609,19 +609,19 @@ TextureImporter:
       name: VileRat_idle_7
       rect:
         serializedVersion: 2
-        x: 576
+        x: 572
         y: 20
-        width: 152
+        width: 156
         height: 100
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6624d5e9c730026499f655efdc5ae802
-      internalID: -1421830310
+      spriteID: 63d34c5198437bd458f5eb25e7479b91
+      internalID: -265659128
       vertices: []
       indices: 
       edges: []
@@ -637,30 +637,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PoisonRat_idle_0: 141296899
-      PoisonRat_idle_1: 1590056810
-      PoisonRat_idle_2: -2099637558
-      PoisonRat_idle_3: -1410777576
-      PoisonRat_idle_4: -127337403
-      PoisonRat_idle_5: 1292391528
-      PoisonRat_idle_6: -1018175677
-      PoisonRat_idle_7: -1795001184
-      Rat_idle_0: -899759295
-      Rat_idle_1: -816054085
-      Rat_idle_2: 1846725143
-      Rat_idle_3: -24326738
-      Rat_idle_4: -461899634
-      Rat_idle_5: -566084877
-      Rat_idle_6: 196649860
-      Rat_idle_7: -1617578084
-      VileRat_idle_0: 1901278641
-      VileRat_idle_1: -1624131321
-      VileRat_idle_2: -53930899
-      VileRat_idle_3: -1245374332
-      VileRat_idle_4: 2117149572
-      VileRat_idle_5: 157919542
-      VileRat_idle_6: -1465536281
-      VileRat_idle_7: -1421830310
+      Rat_idle_0: -1447768184
+      Rat_idle_1: -69278001
+      Rat_idle_2: 389304617
+      Rat_idle_3: 465715132
+      Rat_idle_4: -819005153
+      Rat_idle_5: 1737485196
+      Rat_idle_6: -345073221
+      Rat_idle_7: -352288078
+      Rats_idle_original 1_0: 1544132373
+      Rats_idle_original 1_12: 808362872
+      Rats_idle_original 1_15: -833103989
+      Rats_idle_original 1_18: -121778697
+      Rats_idle_original 1_21: 1033104372
+      Rats_idle_original 1_3: -494814866
+      Rats_idle_original 1_6: 560369272
+      Rats_idle_original 1_9: 1600224662
+      VileRat_idle_0: 710143098
+      VileRat_idle_1: -1436100811
+      VileRat_idle_2: 1360763243
+      VileRat_idle_3: -1881684771
+      VileRat_idle_4: 1599247232
+      VileRat_idle_5: 595919548
+      VileRat_idle_6: 674487497
+      VileRat_idle_7: -265659128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
