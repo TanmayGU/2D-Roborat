@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 
-[RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
+[RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections) /*typeof(Damageable)*/)]
 public class PlayerController : MonoBehaviour
 {
 
@@ -14,26 +14,36 @@ public class PlayerController : MonoBehaviour
     public float jumpImpulse = 10f;
     Vector2 moveInput;
     TouchingDirections touchingDirections;
+    //Damageable damageable;
 
     public float CurrentMoveSpeed { get 
         {
-            if (IsMoving && !touchingDirections.IsOnWall)
+            if (CanMove)
             {
-                if(IsRunning)
+                if (IsMoving && !touchingDirections.IsOnWall)
                 {
-                    return runspeed;
+                    if (IsRunning)
+                    {
+                        return runspeed;
+                    }
+                    else
+                    {
+                        return walkspeed;
+                    }
+
                 }
                 else
                 {
-                    return walkspeed;
+                    //idle state
+                    return 0;
                 }
-
             }
             else
             {
-                //idle state
+                ///movement locked
                 return 0;
-            }     
+            }
+             
         }
          
         }
@@ -78,6 +88,34 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public bool CanMove
+    {
+        get
+        {
+            return animator.GetBool(AnimationStrings.canMove);
+        }
+    }
+
+
+    public bool IsAlive
+    {
+        get
+        {
+            return animator.GetBool(AnimationStrings.isAlive);
+        }
+    }
+
+    public bool LockVelocity { 
+        get 
+        {
+            return animator.GetBool(AnimationStrings.lockVelocity);
+        }
+        //set
+        //{
+        //    animator.SetBool(AnimationStrings.lockVelocity, value);
+        //}
+    }
+
     Rigidbody2D rb;
     Animator animator;
     
@@ -87,13 +125,16 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         touchingDirections = GetComponent<TouchingDirections>();
+        //damageable = GetComponent<Damageable>();
+        
     }
 
 
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.velocity.y);
+        if(!LockVelocity)
+            rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.velocity.y);
 
         animator.SetFloat(AnimationStrings.yVelocity, rb.velocity.y);
     }
@@ -102,9 +143,17 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = context.ReadValue<Vector2>();
 
-        IsMoving = moveInput != Vector2.zero;
+        if(IsAlive)
+        {
+            IsMoving = moveInput != Vector2.zero;
 
-        setFacingDirection(moveInput);
+            setFacingDirection(moveInput);
+        }
+        else
+        {
+            PlayerInput input = GetComponent<PlayerInput>(); input.actions.Disable();
+        }
+        
     }
 
     private void setFacingDirection(Vector2 moveInput)
@@ -135,7 +184,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.started && touchingDirections.IsGrounded)
+        if (context.started && touchingDirections.IsGrounded && CanMove)
         {
             animator.SetTrigger(AnimationStrings.jumpTrigger);
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
@@ -149,6 +198,12 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger(AnimationStrings.attackTrigger);
 
         }
+    }
+
+    public void OnHit(int damage, Vector2 knockback)
+    {
+        //LockVelocity = true;
+        rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
     }
 }
 

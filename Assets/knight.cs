@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
@@ -8,11 +9,13 @@ public class knight : MonoBehaviour
 {
 
     public float walkspeed = 3f;
+    public float walkStopRate = 0.05f;
     public DetectionZone attackZone;
 
     Rigidbody2D rb;
     TouchingDirections touchingDirections;
     Animator animator;
+
 
     public enum WalkableDirection {Right, Left}
 
@@ -41,9 +44,9 @@ public class knight : MonoBehaviour
             _walkDirection = value; }
     }
 
-
-    public bool _hasTarget =false;
-    public bool HasTarget { get 
+    public bool _hasTarget = false;
+    public bool HasTarget { 
+        get 
         {
             return _hasTarget;
         }
@@ -53,6 +56,15 @@ public class knight : MonoBehaviour
             animator.SetBool(AnimationStrings.hasTarget, value);
         }
     }
+
+    public bool CanMove
+    {
+        get
+        {
+            return animator.GetBool(AnimationStrings.canMove);
+        }
+    }
+
 
     private void Awake()
     {
@@ -74,7 +86,11 @@ public class knight : MonoBehaviour
         {
             FlipDirection();
         }
-        rb.velocity = new Vector2(walkspeed * walkDirectionVector.x, rb.velocity.y);
+
+        if(CanMove)
+            rb.velocity = new Vector2(walkspeed * walkDirectionVector.x, rb.velocity.y);
+        else
+            rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0,walkStopRate),rb.velocity.y);
     }
 
     private void FlipDirection()
