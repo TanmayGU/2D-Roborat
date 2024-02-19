@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections) /*typeof(Damageable)*/)]
 public class PlayerController : MonoBehaviour
@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float jumpImpulse = 10f;
     Vector2 moveInput;
     TouchingDirections touchingDirections;
+    public Text LEVELCOMPLETETEXT;
     //Damageable damageable;
 
     public float CurrentMoveSpeed { get 
@@ -204,6 +205,15 @@ public class PlayerController : MonoBehaviour
     {
         //LockVelocity = true;
         rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Win")
+        {
+            LEVELCOMPLETETEXT.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 }
 
