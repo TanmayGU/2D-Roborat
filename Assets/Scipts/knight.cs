@@ -17,7 +17,7 @@ public class knight : MonoBehaviour
     Animator animator;
 
 
-    public enum WalkableDirection {Right, Left}
+    public enum WalkableDirection { Right, Left }
 
     private WalkableDirection _walkDirection;
     private Vector2 walkDirectionVector = Vector2.right;
@@ -25,34 +25,34 @@ public class knight : MonoBehaviour
     public WalkableDirection WalkDirection
     {
         get { return _walkDirection; }
-        set { 
-            if(_walkDirection != value)
+        set {
+            if (_walkDirection != value)
             {
                 //Direction Flipped
                 gameObject.transform.localScale = new Vector2(gameObject.transform.localScale.x * -1, gameObject.transform.localScale.y);
-            
-                if(value == WalkableDirection.Right)
+
+                if (value == WalkableDirection.Right)
                 {
                     walkDirectionVector = Vector2.right;
                 }
-                else if(value == WalkableDirection.Left)
+                else if (value == WalkableDirection.Left)
                 {
                     walkDirectionVector = Vector2.left;
                 }
             }
-            
+
             _walkDirection = value; }
     }
 
     public bool _hasTarget = false;
-    public bool HasTarget { 
-        get 
+    public bool HasTarget {
+        get
         {
             return _hasTarget;
         }
-        private set 
+        private set
         {
-           _hasTarget = value;
+            _hasTarget = value;
             animator.SetBool(AnimationStrings.hasTarget, value);
         }
     }
@@ -77,17 +77,19 @@ public class knight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HasTarget = attackZone.detectedColliders.Count > 0;
+        //HasTarget = attackZone.detectedColliders.Count > 0;
     }
 
     private void FixedUpdate()
     {
-        if (touchingDirections.IsGrounded && touchingDirections.IsOnWall)
+        HasTarget = attackZone.detectedColliders.Count > 0;
+        if (touchingDirections.IsGrounded && touchingDirections.IsOnWall && HasTarget == false)
         {
             FlipDirection();
         }
 
-        if(CanMove)
+
+            if (CanMove)
             rb.velocity = new Vector2(walkspeed * walkDirectionVector.x, rb.velocity.y);
         else
             rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0,walkStopRate),rb.velocity.y);
