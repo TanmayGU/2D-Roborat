@@ -57,6 +57,20 @@ public class knight : MonoBehaviour
         }
     }
 
+    //public bool _hasAlly = false;
+    //public bool HasAlly
+    //{
+    //    get
+    //    {
+    //        return _hasAlly;
+    //    }
+    //    private set
+    //    {
+    //        _hasAlly = value;
+    //        //animator.SetBool(AnimationStrings.hasAlly, value);
+    //    }
+    //}
+
     public bool CanMove
     {
         get
@@ -83,13 +97,17 @@ public class knight : MonoBehaviour
     private void FixedUpdate()
     {
         HasTarget = attackZone.detectedColliders.Count > 0;
+        //HasAlly = attackZone.goodColliders.Count > 0;
         if (touchingDirections.IsGrounded && touchingDirections.IsOnWall && HasTarget == false)
         {
             FlipDirection();
         }
+        //else if (touchingDirections.IsGrounded && attackZone.goodColliders.Count > 0)
+        //{
+        //    FlipDirection();
+        //}
 
-
-            if (CanMove)
+        if (CanMove)
             rb.velocity = new Vector2(walkspeed * walkDirectionVector.x, rb.velocity.y);
         else
             rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0,walkStopRate),rb.velocity.y);
@@ -110,8 +128,9 @@ public class knight : MonoBehaviour
             Debug.LogError("Current walkable direction  is not set to legal values of right or left");
         }
     }
+    
 
 
-  
-   
+
+
 }
