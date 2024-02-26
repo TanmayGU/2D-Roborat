@@ -1,3 +1,4 @@
+///Damageable////
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,8 +7,10 @@ using UnityEngine.Events;
 public class Damageable : MonoBehaviour
 {
     public UnityEvent<int, Vector2> damageableHit;
+    public UnityEvent<int, int> healthChanged;
+    //public GameManagerScript gameManager;
 
-
+    private bool isDead;
     Animator animator;
 
     [SerializeField]
@@ -36,10 +39,13 @@ public class Damageable : MonoBehaviour
         set
         {
             _health = value;
+            healthChanged?.Invoke(_health, MaxHealth);
 
             ///IF health below 0 character is dead
-            if(_health <= 0)
+            if(_health <= 0 && !isDead)
             {
+                isDead = true;
+                //gameManager.gameOver();
                 IsAlive = false;
             }
         }
@@ -115,4 +121,6 @@ public class Damageable : MonoBehaviour
         }
         return false;
     }
+
+    
 }
