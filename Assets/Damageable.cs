@@ -50,17 +50,17 @@ public class Damageable : MonoBehaviour
     [SerializeField]
     private bool isInvincible = false;
 
-    //public bool IsHit
-    //{
-    //    get
-    //    {
-    //        return animator.GetBool(AnimationStrings.isHit);
-    //    }
-    //    private set
-    //    {
-    //        animator.SetBool(AnimationStrings.isHit, value);
-    //    }
-    //}
+    public bool IsHit
+    {
+        get
+        {
+            return animator.GetBool(AnimationStrings.isHit);
+        }
+        private set
+        {
+            animator.SetBool(AnimationStrings.isHit, value);
+        }
+    }
 
     private float timeSinceHit = 0;
     public float invincibilityTime = 0.25f;
@@ -108,7 +108,8 @@ public class Damageable : MonoBehaviour
             isInvincible = true;
 
             animator.SetTrigger(AnimationStrings.hitTrigger);
-           // LockVelocity = true;
+            //animator.SetTrigger(AnimationStrings.hitTrigger);
+            // LockVelocity = true;
             damageableHit?.Invoke(damage, knockback);
             return true;
         }
