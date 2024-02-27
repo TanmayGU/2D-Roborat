@@ -192,6 +192,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void OnDown(InputAction.CallbackContext context)
+    {
+        if (context.started && !touchingDirections.IsGrounded)
+        {
+            animator.SetTrigger(AnimationStrings.jumpTrigger);
+            rb.velocity = new Vector2(rb.velocity.x, -jumpImpulse);
+        }
+    }
+
     public void OnAttack(InputAction.CallbackContext context)
     {
         if (context.started)
@@ -210,6 +219,9 @@ public class PlayerController : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Win")
+        //{
+        //    if (gameObject.name(KnightEnemy (8)) isDestroyed)
+        //}
         {
             LEVELCOMPLETETEXT.gameObject.SetActive(true);
             Time.timeScale = 0;
