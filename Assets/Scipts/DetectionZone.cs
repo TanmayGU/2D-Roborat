@@ -5,7 +5,8 @@ using UnityEngine;
 public class DetectionZone : MonoBehaviour
 {
     public List<Collider2D> detectedColliders = new List<Collider2D>();
-    public List<string> collisionTag = new List<string>();
+    public List<Collider2D> goodColliders = new List<Collider2D>();
+
     Collider2D col;
 
     private void Awake()
@@ -19,7 +20,10 @@ public class DetectionZone : MonoBehaviour
         {
             detectedColliders.Add(collision);
         }
-        //collisionTag.Add(collision.tag);
+        //else if (collision.tag == "KnightEnemy")
+        //{
+        //    goodColliders.Add(collision);
+        //}
     }
 
     private void OnTriggerExit2D(Collider2D collision)
