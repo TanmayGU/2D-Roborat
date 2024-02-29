@@ -7,9 +7,11 @@ public class Damageable : MonoBehaviour
 {
     public UnityEvent<int, Vector2> damageableHit;
     public UnityEvent<int, int> healthChanged;
-    //public GameManagerScript gameManager;
+    public GameManagerScript gameManager;
 
     Animator animator;
+
+    private bool _isDead;
 
     [SerializeField]
     private int _maxHealth = 100;
@@ -43,6 +45,9 @@ public class Damageable : MonoBehaviour
             if (_health <= 0)
             {
                 IsAlive = false;
+                //if player is dead, then game over?
+                gameManager.gameOver();
+                //_isDead = true;
             }
         }
     }
@@ -81,7 +86,6 @@ public class Damageable : MonoBehaviour
         }
     }
 
- 
     private void Awake()
     {
         animator = GetComponent<Animator>();
